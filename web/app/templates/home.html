@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+      <div class="jumbotron">
+        <h1>Golden Blyth</h1>
+        <p class="lead" style="background-image: url("img/fuji.jpg");">Help governments & ngos make better policies using AI backed predictions</p>
+        <div class="clearfix" style="height: 20px"></div>
+        <h3 align="center">Heatmap of Deaths due to Malnutrition in India.</h3>
+        <img class="img img-responsive" src="{{ url_for('static', filename = 'datahack.png') }}">  
+        
+        
+        <div class="clearfix" style="height: 20px"></div>
+        <p><a class="btn btn-lg btn-success" href="{{url_for('well')}}" role="button">Hackathon Happened :'(</a></p>
+      </div>
+
+{% endblock %}
